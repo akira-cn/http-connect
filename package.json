@@ -1,7 +1,7 @@
 {
   "name": "http-connect",
   "description": "a module that make http instance compatible with connect middleware",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Akira Wu <akira.cn@gmail.com> (https://github.com/akira-cn)",
   "contributors": [
     "Akira Wu <akira.cn@gmail.com> (https://github.com/akira-cn)"
