@@ -38,7 +38,7 @@ console.log("Server runing at port: " + PORT + ".");
 $ npm install http-connect
 ```
 
-## Using think.js
+## Use with think.js
 
 HTTP-Connect can be used in [think.js](https://github.com/75team/thinkjs) controllers.
 
