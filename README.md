@@ -8,7 +8,7 @@ var http = require('http');
 
 var url = require('url');
 
-var connect = require('./index.js');
+var connect = require('http-connect');
 
 var server = http.createServer(function (request, response) {
   var app = connect({
