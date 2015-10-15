@@ -19,6 +19,10 @@ var Promise = require('es6-promise').Promise;
 
 function Connect(http){
   this.http = http;
+  if(!http.req.query){
+    var Qs = require('qs');
+    http.req.query = Qs.parse(http.req.url.split('?')[1]||'');
+  }
 }
 
 Connect.prototype.use = function(route, middleware){

@@ -14,7 +14,8 @@
   ],
   "repository": "akira-cn/http-connect",
   "dependencies": {
-    "es6-promise": "*"
+    "es6-promise": "*",
+    "qs": "*"
   },
   "devDependencies": {
     "cookie-parser": "*"
