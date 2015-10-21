@@ -22,7 +22,8 @@ function Connect(http){
   this.next = Promise.resolve();
   if(!http.req.query){
     var Qs = require('qs');
-    http.req.query = Qs.parse(http.req.url.split('?')[1]||'');
+    var url = require('url');
+    http.req.query = Qs.parse(url.parse(http.req.url).query);
   }
 }
 
