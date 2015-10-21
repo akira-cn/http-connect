@@ -34,7 +34,7 @@ Connect.prototype.use = function(route, middleware){
   var http = this.http;
   var req = http.req;
   var res = http.res;
-  var pathname = '/' + http.pathname.replace(/^\//,'');
+  var pathname = '/' + http.pathname.replace(/^\/|\/$/g,'');
 
   if(route !== '*' && route !== pathname){
     return;
